@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.Dashboard{
+  width:100%;
+  height: 100vh;
+  position: relative;
+  background-color: #e6e6fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Sidebar{
+width: 20% ;
+height:100vh;
+margin-top: 0;
+background-color: rgb(22, 22, 22);
+z-index: 20;
+position: absolute;
+top:0;
+color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sidebar ul{
+  height:80vh;
+  padding-top: 5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sidebar ul li{
+  list-style-type: none;
+}
+
+.Navcomponent{
+width:100%;
+height:10vh;
+z-index: 10;
+background-color: #f0f8ff ;
+
+}
+
+.Navcomponent h3{
+  margin-left: 90%;
+}
+
+.courses{
+  margin-left: 20%;
+  width:80%;
+  height:90vh;
+}
+
+.container{
+  width:300px;
+  height:30vh;
+  border: 1px solid black;
+  box-shadow: 10px 10px rgb(219, 219, 219);
+  z-index: 30;
+  margin-left: 4%;
+  margin-top:8vh;
+}
+
+.main{
+  width:100%;
+  height:70vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main input{
+  width:350px;
+  height:6vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sDashboard{
+  width:100%;
+  height:100vh;
 }
